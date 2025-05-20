@@ -10,40 +10,40 @@
 </head>
 
 <body>
-  <main>
-    <nav class="menu-container">
+  <main class="main1">
+     <nav class="menu-container">
 
-      <input type="checkbox" aria-label="Toggle menu" />
-      <span></span>
-      <span></span>
-      <span></span>
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
 
-      <a href="#" class="menu-logo">
-        <img src="ChatGPT Image 13 maj 2025, 08_58_25 (1).png" alt="" />
-      </a>
-
-      <div class="menu">
-        <ul>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">
-              Strona Główna
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              O nas
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Kontakt
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <a href="#" class="menu-logo">
+          <img src="ChatGPT Image 13 maj 2025, 08_58_25 (1).png" alt=""/>
+        </a>
+      
+        <div class="menu">
+          <ul>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">
+                Strona Główna 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                O nas
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Kontakt
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     <div class="baner">
       <div class="split-text-container">
         <span class="text-part left">SCAM</span>
@@ -57,21 +57,21 @@
     <div class="info_Cont" id="info">
       <div class="whole">
         <div class="lefti">
-        <div class="teksty">
-          <h1>O naszej działalności</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos vitae quae vero a similique iste ad
-            perspiciatis ratione placeat eaque saepe possimus consequuntur dolorem minima, facilis, doloribus, debitis
-            enim quas.</p>
-            <button ><a href="#container">Zobacz gdzie działamy</a></button>
+          <div class="teksty">
+            <h1>O naszej działalności</h1>
+            <p>W dobie cyfrowych przejazdów, aplikacji, które wiedzą o Tobie więcej niż własna matka, i kierowców,
+              którzy nie wiedzą gdzie skręcić – pojawiamy się my: Scam Taxi. Taksówka, której nazwa może i brzmi
+              podejrzanie, ale przejazdy są całkiem legalne (albo przynajmniej tak twierdzi nasz prawnik).</p>
+            <button><a href="#container">Zobacz gdzie działamy</a></button>
+          </div>
+        </div>
+        <div class="righti">
+          <div class="promoimage">
+            <img src="baner.png" alt="foto">
+          </div>
         </div>
       </div>
-      <div class="righti">
- <div class="promoimage">
-  <img src="baner.png" alt="foto">
- </div>
-      </div>
-      </div>
-      
+
     </div>
     <div class="container" id="container">
       <div class="banner left"></div>
@@ -82,28 +82,77 @@
         <h1 class="txt">Wybierz województwo</h1>
         <div class="map">
           <ul class="wojewodztwa">
-            <li class="Zachodnio"></li>
-            <li class="pomorskie"></li>
-            <li class="mazurskie"></li>
-            <li class="podlaskie"></li>
-            <li class="kujawsko"></li>
-            <li class="lubuskie"></li>
-            <li class="wielkopolskie"></li>
-            <li class="mazowieckie"></li>
-            <li class="dolnośląskie"></li>
-            <li class="opolskie"></li>
-            <li class="śląskie"></li>
-            <li class="świętokrzyskie"></li>
-            <li class="lubelskie"></li>
-            <li class="małopolskie"></li>
-            <li class="podkarpackie"></li>
-            <li class="lodzkie"> Łódzkie</li>
+            <li class="Zachodnio"><a>Zachodnio-pomorskie</a></li>
+            <li class="pomorskie"> <a>Pomorskie</a></li>
+            <li class="mazurskie"><a>Mazurskie</a></li>
+            <li class="podlaskie"><a>Podlaskie</a></li>
+            <li class="kujawsko"><a>Kujawsko-pomorskie</a></li>
+            <li class="lubuskie"><a>Lubuskie</a></li>
+            <li class="wielkopolskie"><a>Wielkopolskie</a></li>
+            <li class="mazowieckie"><a>Mazowieckie</a></li>
+            <li class="dolnośląskie"><a>Dolnośląskie</a></li>
+            <li class="opolskie"><a>Opolskie</a></li>
+            <li class="śląskie"><a>Śląskie</a></li>
+            <li class="świętokrzyskie"><a>Świętokrzyskie</a></li>
+            <li class="lubelskie"><a>Lubelskie</a></li>
+            <li class="małopolskie"><a>Małopolskie</a></li>
+            <li class="podkarpackie"><a>Podkarpackie</a></li>
+            <li class="lodzkie"> <a>Łódzkie</a></li>
           </ul>
         </div>
       </div>
 
     </div>
+    <div class="container1">
+        <h1>Skontaktuj się z nami</h1>
 
+        <div class="contact-info">
+            <p><strong>Telefon:</strong> <a href="tel:+48641626381">+48 721 323 854</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:kontakt@scamtaxi.pl">kontakt@scamtaxi.pl</a></p>
+            <p><strong>Adres:</strong> ul. Główna 15 Warszawa</p>
+            <p><strong>Godziny pracy:</strong> 24/7</p>
+        </div>
+
+        <form class="contact-form" action="mailto:kontakt@scamtaxi.pl" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Twoje imię" required>
+            <input type="email" name="email" placeholder="Twój e-mail" required>
+            <textarea name="message" rows="5" placeholder="Twoja wiadomość" required></textarea>
+            <button type="submit">Wyślij wiadomość</button>
+        </form>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Kontakt</h4>
+          <p> Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
+          <p> Email: <a href="mailto:kontakt@taksowka.pl">kontakt@taksowka.pl</a></p>
+          <p> Adres: ul. Przykładowa 1, 00-000 Miasto</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Szybkie linki</h4>
+          <ul>
+            <li><a href="/">Strona główna</a></li>
+            <li><a href="/oferta">Oferta</a></li>
+            <li><a href="/zamow">Zamów taksówkę</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Obserwuj nas</h4>
+          <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">X (Twitter)</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 ScamTaxi.pl – Wszystkie prawa zastrzeżone</p>
+      </div>
+    </footer>
   </main>
 
 

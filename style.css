@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    
 }
 .page-container {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 0 60px; /* miejsce na boczne paski */
+  padding: 0 60px; 
+}
+.main1{
+    font-family: "Quicksand", sans-serif;
 }
 .map{
     display: flex;
@@ -24,7 +29,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 1000px;
+    height: 815px;
 }
 main div ul li:hover{
     background-color: #FDDA0D;
@@ -35,6 +40,14 @@ main div ul li:hover{
     height: 500px;
     background-color: gray;
     clip-path: polygon(32% 19%, 28% 17%, 31% 5%, 43% 0%, 47% 0%, 50% 3%, 48% 3%, 49% 6%, 51% 5%, 49% 8%, 49% 18%);
+    cursor: pointer;
+}
+.pomorskie a{
+  width: 100px;
+  z-index: 999;
+  color: black;
+  position: absolute;
+  margin-top: -1000px;
 }
 .Zachodnio{
     position: absolute;
@@ -42,6 +55,7 @@ main div ul li:hover{
     height: 500px;
     background-color: gray;
     clip-path: polygon(30% 6%, 27% 17%, 22% 27%, 3% 35%, 0% 30%, 3% 14%, 5% 17%, 5% 15%, 3% 12%);
+    cursor: pointer;
 }
 .mazurskie{
     position: absolute;
@@ -49,6 +63,7 @@ main div ul li:hover{
     width: 500px;
     height: 500px;
     background-color: gray;
+    cursor: pointer;
 }
 .podlaskie{
     position: absolute;
@@ -56,6 +71,7 @@ main div ul li:hover{
     width: 500px;
     height: 500px;
     background-color: gray;
+    cursor: pointer;
 }
 .wielkopolskie{
     position: absolute;
@@ -63,6 +79,7 @@ main div ul li:hover{
     width: 500px;
     height: 500px;
     background-color: gray;
+    cursor: pointer;
 }
 .mazowieckie{
     position: absolute;
@@ -70,6 +87,7 @@ main div ul li:hover{
     width: 500px;
     height: 500px;
     background-color: gray;
+    cursor: pointer;
 }
 .lubelskie{
     position: absolute;
@@ -77,6 +95,7 @@ main div ul li:hover{
     width: 500px;
     height: 500px;
     background-color: gray;
+    cursor: pointer;
 }
 .świętokrzyskie{
     position: absolute;
@@ -84,6 +103,7 @@ main div ul li:hover{
     width: 500px;
     height: 500px;
     background-color: gray;
+    cursor: pointer;
 }
 .małopolskie{
     position: absolute;
@@ -91,6 +111,7 @@ main div ul li:hover{
     width: 500px;
     height: 500px;
     background-color: gray;
+    cursor: pointer;
 }
 .podkarpackie{
     position: absolute;
@@ -98,6 +119,7 @@ main div ul li:hover{
     width: 500px;
     height: 500px;
     background-color: gray; 
+    cursor: pointer;
 }
 .lubuskie{
     position: absolute;
@@ -105,13 +127,15 @@ main div ul li:hover{
     height: 500px;
     background-color: gray;
     clip-path: polygon(4% 36%, 4% 41%, 5% 42%, 5% 54%, 7% 58%, 22% 49%, 17% 43%, 18% 30%);
+    cursor: pointer;
 }
 .kujawsko{
     position: absolute;
     width: 500px;
     height: 500px;
     background-color: gray;
-    clip-path: polygon(33% 20%, 35% 35%, 48% 41%, 50% 39%, 54% 27%, 49% 20%, 34% 18%);
+    clip-path: polygon(33% 20%, 35% 35%, 48% 41%, 50% 39%, 54% 27%, 49% 20%, 30% 20%);
+    cursor: pointer;
 }
 .lodzkie{
     position: absolute;
@@ -119,6 +143,7 @@ main div ul li:hover{
     height: 500px;
     background-color: gray;
     clip-path: polygon(37% 62%, 48% 43%, 50% 41%, 62% 51%, 62% 59%, 54% 68%);
+    cursor: pointer;
 }
 .dolnośląskie{
     position: absolute;
@@ -126,6 +151,7 @@ main div ul li:hover{
     height: 500px;
     background-color: gray;
     clip-path: polygon(5% 67%, 7% 59%, 23% 51%, 35% 59%, 36% 62%, 26% 76%, 26% 80%, 24% 82%);
+    cursor: pointer;
 }
 
 .opolskie{
@@ -134,13 +160,15 @@ main div ul li:hover{
     background-color: gray;
     height: 500px;
     clip-path: polygon(27% 77%, 36% 63%, 43% 65%, 37% 83%, 35% 84%);
+    cursor: pointer;
 }
 .śląskie{
     position: absolute;
     width: 500px;
     height: 500px;
     background-color: gray;
-    clip-path: polygon(37% 83%, 44% 65%, 54% 70%, 56% 76%, 48% 86%, 52% 92%, 48% 96%);
+    clip-path: polygon(39% 83%, 44% 65%, 54% 70%, 56% 76%, 48% 86%, 52% 92%, 48% 96%);
+    cursor: pointer;
 }
 body {
     overflow-x: hidden;
@@ -167,8 +195,8 @@ body {
   }
   
   .menu-logo img {
-    max-height: 60px;
-    max-width: 200px;
+    max-height: 40px;
+    max-width: 100px;
     flex-shrink: 0;
   }
   
@@ -177,13 +205,13 @@ body {
     color: #232323;
     transition: color 0.3s ease;
   }
-  
+  .menu ul li a{
+          color: #cdcdcd;
+  }
   .menu-container a:hover {
-    color: black;
+    color: #e6b800;
   }
-  .menu ul li:hover{
-    background-color: #FDDA0D;
-  }
+  
   .menu-container input {
     display: block;
     width: 35px;
@@ -212,27 +240,8 @@ body {
                 opacity 0.55s ease;
   }
   
-  .menu-container span:first-child {
-    transform-origin: 0% 0%;
-  }
-  
-  .menu-container span:nth-child(3) {
-    transform-origin: 0% 100%;
-  }
-  
-  .menu-container input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(3px,-1px);
-    background: #232323;
-  }
-  
-  .menu-container input:checked ~ span:nth-child(4) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  .menu-container input:checked ~ span:nth-child(3) {
-    transform: rotate(-45deg) translate(-5px,11px);
+  nav input:active{
+    background-image: url(75519.png);
   }
   
   .menu ul {
@@ -240,15 +249,16 @@ body {
   }
   
   .menu li {
-    border-radius: 15px;
-    padding: 20px;
+    padding: 10px 0;
     font-size: 22px;
   }
 
   .split-text-container {
+    width: 25%;
     justify-content: center;
     align-items: center;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -361,12 +371,21 @@ a{
     margin: 20px;
 
 }
-
+.promoimage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promoimage img{
+  width: 100%;
+}
 .banner {
   position: absolute;
   top: 100
 ;
   width: 50px;
+  display: block;
   height: 100%;
   background-image: repeating-linear-gradient(
     to bottom,
@@ -385,6 +404,7 @@ a{
 ;
 margin: 0px 40px;
   width: 50px;
+    display: block;
   height: 100%;
   background-image: repeating-linear-gradient(
     to bottom,
@@ -422,8 +442,50 @@ margin: 0px 40px;
 }
 .container{
    background-color: #FDDA0D;
-   height: 955px;
+   height: 893px;
 }
+.footer {
+  background-color: #232323;
+  color: #cdcdcd;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #FDDA0D;
+}
+
+.footer-section a {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
 @keyframes scrollPattern {
   from {
     background-position: 0 0;
@@ -546,8 +608,8 @@ max-width: 800px;
 .taksowkarz {
   display: flex;
   align-items: center;
-  background-color: #eef2f3;
-  border-radius: 4px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -569,7 +631,6 @@ max-width: 800px;
   border-radius: 50%;
   margin-left: auto;
   margin-right: 10px;
-  border: 2px solid #ccc;
 }
 
 .prawo {
@@ -584,7 +645,12 @@ max-width: 800px;
   min-height: 400px;
   transition: all 0.3s ease;
 }
-
+.taxiInfo{
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 200px;
+}
 .taxiInfo h2 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -594,53 +660,53 @@ max-width: 800px;
 .taxiInfo p {
   font-size: 16px;
   line-height: 1.6;
-  color: #444;
+  color: black;
   margin: 5px 0;
 }
 
 .taxiInfo img {
   margin-top: 15px;
   max-width: 100%;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 #komunikat {
-  font-weight: bold;
   margin-top: 15px;
   padding: 10px 15px;
-  background-color: #ffecec;
+  background-color: transparent;
   border-radius: 8px;
   width: 100%;
+  max-width: 180px;
   text-align: center;
 }
 
 #komunikat.green {
-  background-color: #e6ffed;
-  color: #2d8a4b;
+  background-color: #c9f8d7;
+  color: green;
 }
 
 #komunikat.red {
-  background-color: #ffeaea;
-  color: #b40000;
+  background-color: transparent;
+  color: red;
 }
 
 
 #rezerwujBtn {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px;
-  background-color: #28a745;
+  background-color: #FDDA0D;
   color: white;
   font-size: 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s, transform 0.2s;
 }
 
 #rezerwujBtn:hover {
-  background-color: #218838;
+  background-color: #c9ab05;
   transform: translateY(-2px);
 }
 
@@ -750,13 +816,49 @@ max-width: 800px;
   border-radius: 10px;
   border: 2px solid #ccc;
 }
-
+ .container1 {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+        }
+        h1 {
+            color: #333;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 12px 25px;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-form button:hover {
+            background-color: #e6b800;
+        }
   @media only screen and (max-width: 767px) { 
     .menu-container {
       flex-direction: column;
       align-items: flex-end;
     }
-    
+    .info_Cont{
+      flex-direction: column;
+    }
+   
     .menu-logo {
       position: absolute;
       left: 0;
@@ -765,22 +867,20 @@ max-width: 800px;
     }
   
     .menu-logo img {
-      max-height: 40px;
+      max-height: 30px;
     }
   
     .menu {
-      position: absolute;
+      position: fixed;
       box-sizing: border-box;
-      width: 300px;
+      width: 100%;
       right: -300px;
-      top: 0;
+      top: 86px;
       margin: -20px;
       padding: 75px 50px 50px;
-      background: #cdcdcd;
-      -webkit-font-smoothing: antialiased;
-      transform-origin: 0% 0%;
-      transform: translateX(0%);
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      color: #cdcdcd;
+      font-weight: bolder;
+      background: #333;
     }
   
     .menu-container input:checked ~ .menu {
@@ -788,15 +888,182 @@ max-width: 800px;
     }
   }
   
+@media only screen and (max-width: 320px) {
+   .promoimage{
+      width: 320px;
+    }
+    .promoimage img{
+      width: 320px;
+    }
+    .teksty{
+      width: 320px;
+    }
+    .teksty h1{
+      font-size: 40px;
+      text-align: center;
+    }
+    .teksty p{
+      border: none;
+      text-align: center;
+    }
+    .split-text-container{
+      font-size: 3rem;
+    }
+    .righti{
+      width: 320px;
+    }
+    .banner{
+      display: none;
+    }
+    .banner2{
+      display: none;
+    }
+    .pomorskie{
 
+    width: 250px;
+    height: 250px;
+
+}
+.pomorskie a{
+  width: 100px;
+  z-index: 999;
+  color: black;
+  position: absolute;
+  margin-top: -1000px;
+}
+.Zachodnio{
+
+    width: 250px;
+    height: 250px;
+
+
+}
+.mazurskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.podlaskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.wielkopolskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.mazowieckie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.lubelskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.świętokrzyskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.małopolskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.podkarpackie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.lubuskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.kujawsko{
+
+    width: 250px;
+    height: 250px;
+
+}
+.lodzkie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.dolnośląskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+
+.opolskie{
+
+    width: 250px;
+
+    height: 250px;
+
+}
+.śląskie{
+
+    width: 250px;
+    height: 250px;
+
+}
+.wojewodztwa{
+  height: 400px;
+}
+.whole{
+flex-direction: column-reverse;
+}
+.split-text-container{
+  width: 100%;
+}
+}
+@media only screen and (min-width: 1024px){
+  .whole{
+    flex-direction: row !important;
+  }
+  .split-text-container{
+    width: 50% !important;
+  }
+  .container{
+    height: 944px;
+  }
+  .wojewodztwa{
+    height: 944px;
+  }
+}
   @media only screen and (min-width: 768px) { 
     .menu-container {
       width: 100%;
     }
-  
+  .split-text-container{
+  width: 70%;
+}
+.whole{
+  flex-direction: column-reverse;
+  height: 1200px;
+}
+.teksty p{
+  border-right: none;
+}
     .menu-container a {
       color: #cdcdcd;
-      
     }
   
     .menu-container input {

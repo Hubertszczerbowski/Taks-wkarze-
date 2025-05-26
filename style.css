@@ -14,23 +14,44 @@
 .main1{
     font-family: "Quicksand", sans-serif;
 }
-.map{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    max-height: 900px;
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 900px;
 }
-.wojewodztwa{
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 815px;
+
+.wojewodztwa {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 815px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.wojewodztwa li {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.wojewodztwa li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
 main div ul li:hover{
     background-color: #FDDA0D;
 }
@@ -176,18 +197,20 @@ body {
     margin: 0;
   }
   
-  .menu-container {
-    position: relative;
+        .menu-container {
+ position: sticky;
+            top: 0;
     display: flex;
     align-items: center;
     background: #232323;
     color: #cdcdcd;
     padding: 20px;
-    z-index: 1;
+    z-index: 99999;
     -webkit-user-select: none;
     user-select: none;
     box-sizing: border-box;
   }
+  
   
   .menu-logo {
     line-height: 0;
@@ -858,7 +881,10 @@ max-width: 800px;
     .info_Cont{
       flex-direction: column;
     }
-   
+   .wojewodztwa li{
+    width: 600px;
+    height: 600px;
+   }
     .menu-logo {
       position: absolute;
       left: 0;
@@ -874,23 +900,29 @@ max-width: 800px;
       position: fixed;
       box-sizing: border-box;
       width: 100%;
-      right: -300px;
+      right: -100%;
       top: 86px;
       margin: -20px;
       padding: 75px 50px 50px;
       color: #cdcdcd;
       font-weight: bolder;
       background: #333;
+      transition: .4s;
     }
   
     .menu-container input:checked ~ .menu {
-      transform: translateX(-100%);
+      transform: translateX(-103%);
+      transition: .4s;
     }
   }
   
 @media only screen and (max-width: 320px) {
    .promoimage{
       width: 320px;
+    }
+    .wojewodztwa li{
+      width: 320px;
+      height: 320px;
     }
     .promoimage img{
       width: 320px;
@@ -920,8 +952,8 @@ max-width: 800px;
     }
     .pomorskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .pomorskie a{
@@ -933,95 +965,95 @@ max-width: 800px;
 }
 .Zachodnio{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 
 }
 .mazurskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .podlaskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .wielkopolskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .mazowieckie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .lubelskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .świętokrzyskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .małopolskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .podkarpackie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .lubuskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .kujawsko{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .lodzkie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .dolnośląskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 
 .opolskie{
 
-    width: 250px;
+    width: 100px;
 
-    height: 250px;
+    height: 100px;
 
 }
 .śląskie{
 
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
 
 }
 .wojewodztwa{
